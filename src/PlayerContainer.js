@@ -4,13 +4,13 @@ import Video from "./files/enhanced_video.mp4"
 import SubmissionForm from "./components/SubmissionForm"
 import ResponsivePlayer from "./components/ResponsivePlayer"
 
-const DOLBY_API_KEY = "#"
+const REACT_APP_DOLBY_API_KEY = process.env.REACT_APP_DOLBY_API_KEY
 
 class PlayerContainer extends Component {
   constructor() {
     super()
     this.state ={
-      regularUrl: '',
+      regularUrl: '/',
       enhancedUrl: Video,
       file: null,
       progress: -1
@@ -39,7 +39,7 @@ class PlayerContainer extends Component {
             method: "POST",
             url: "https://api.dolby.com/media/input",
             data: { url: `dlb://${this.state.file.name}` },
-            headers: { "x-api-key": DOLBY_API_KEY }
+            headers: { "x-api-key": REACT_APP_DOLBY_API_KEY }
         })
         .then(res => {return res.data.url})
         .catch(err => console.error(err))
@@ -63,7 +63,7 @@ class PlayerContainer extends Component {
             method: "POST",
             url: "https://api.dolby.com/media/enhance",
             data: {input: input, output: output},
-            headers: {"x-api-key": DOLBY_API_KEY}
+            headers: {"x-api-key": REACT_APP_DOLBY_API_KEY}
         })
 
         await axios({
@@ -104,6 +104,7 @@ render() {
           <ResponsivePlayer url={this.state.regularUrl} />
           <ResponsivePlayer url={this.state.enhancedUrl} />
         </div>
+  <p>{REACT_APP_DOLBY_API_KEY}</p>
           {this.state.progress > -1 && <p className="progress-text">Upload progress: {this.state.progress}%</p>}
       </div>
     )

@@ -5,7 +5,7 @@ const cors = require("cors")
 const Path = require("path")
 const axios = require("axios")
 
-const DOLBY_API_KEY = "#"
+const REACT_APP_DOLBY_API_KEY = process.env.DOLBY_API_KEY
 
 app.use(cors());
 app.use(express.json());
@@ -25,7 +25,7 @@ async function download(url) {
     method: "GET",
     url: `https://api.dolby.com/media/output?url=${url}`,
     responseType: "stream",
-    headers: {"x-api-key": DOLBY_API_KEY}
+    headers: {"x-api-key": REACT_APP_DOLBY_API_KEY}
   })
 
   response.data.pipe(Fs.createWriteStream(path))
