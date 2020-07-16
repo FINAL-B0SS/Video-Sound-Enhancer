@@ -1,7 +1,7 @@
 ## Video Sound Enhancer
 Powered by https://dolby.io/
 
-This is a web app that will take an MP4 file you upload and analyze/enhance it audio properties using the Dolby enhancement API.
+This is a web app that will take an MP4 file you upload and analyze/enhance it's audio properties using the Dolby enhancement API.
 
 ### Setup and Run Project Locally
 
