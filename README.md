@@ -5,7 +5,10 @@ This is a web app that will take an MP4 file you upload and analyze/enhance it's
 
 ### Setup and Run Project Locally
 
-# Add your Media Processing APIs key for Dolby.io to the .env file!
+Add your Media Processing APIs key for Dolby.io to the .env file
+```
+REACT_APP_DOLBY_API_KEY=${API_KEY}
+```
 
 Download/install dependencies 
 ```
