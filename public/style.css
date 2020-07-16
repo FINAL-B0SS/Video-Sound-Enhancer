@@ -1,0 +1,153 @@
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	background-size: cover;
+	font-family: sans-serif;
+    background-position: center;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
+
+#video-background {
+	/*  making the video fullscreen  */
+    right: 0; 
+    bottom: 0;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+    position: fixed;
+    min-width: 100%; 
+    min-height: 100%;
+	}
+
+.progress-text {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+.file-input {
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > p {
+    margin-left: 0;
+    padding-left: 20;
+    font-size: 50px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: white;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    background-color: red;
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer > p {
+    margin-left: 0;
+    font-size: 50px;
+    padding-left: 20;
+    text-align: center;
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+header > img {
+    height: 100%;
+    margin-right: 0
+}
+
+.row-center {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.player-wrapper {
+    padding: 20;
+    position: relative;
+}
+
+.before-after-signs {
+    width: 50;
+    height: 50;
+    justify-content: center;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.form > input {
+    width: 50%;
+    height: 40px;
+}
+
+.form > button {
+    border: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    background: #6441A5;
+    font-family: VT323, monospace;
+}
+
+.form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 25px;
+    text-align: center;
+    font-family: VT323, monospace;
+}
+.form > input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 25px;
+    text-align: center;
+    font-family: VT323, monospace;
+}
+.form > input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 25px;
+    text-align: center;
+    font-family: VT323, monospace;
+}
+.form > input:-moz-placeholder { /* Firefox 18- */
+    font-size: 25px;
+    text-align: center;
+    font-family: VT323, monospace;
+}
+
+.enhance- {
+    border: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    background: #6441A5;
+    font-family: VT323, monospace;
+}
