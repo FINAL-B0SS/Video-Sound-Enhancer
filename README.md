@@ -5,7 +5,7 @@ This is a web app that will take an MP4 file you upload and analyze/enhance it a
 
 ### Setup and Run Project Locally
 
-# At the top of server.js and PlayerContainer.js fill in DOLBY_API_KEY with your consumer API Key you get from the Dolby.io dashboard
+# Add your Media Processing APIs key for Dolby.io to the .env file!
 
 Download/install dependencies 
 ```
