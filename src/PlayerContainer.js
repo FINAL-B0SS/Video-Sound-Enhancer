@@ -104,7 +104,6 @@ render() {
           <ResponsivePlayer url={this.state.regularUrl} />
           <ResponsivePlayer url={this.state.enhancedUrl} />
         </div>
-  <p>{REACT_APP_DOLBY_API_KEY}</p>
           {this.state.progress > -1 && <p className="progress-text">Upload progress: {this.state.progress}%</p>}
       </div>
     )
